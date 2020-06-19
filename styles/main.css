@@ -268,12 +268,3 @@ blockquote p {
 ul.contains-task-list {
   list-style-type: none;
 }
-
-        body.background-blue {
-            background: #e7f5ff;
-        }
-
-        body.background-blue .pcoded-navbar.theme-horizontal~.pcoded-header[class*=header-] {
-            background: #e7f5ff;
-        }
-    
