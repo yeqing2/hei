@@ -270,10 +270,10 @@ ul.contains-task-list {
 }
 
         body.background-blue {
-            background: #ffffff;
+            background: #e7f5ff;
         }
 
         body.background-blue .pcoded-navbar.theme-horizontal~.pcoded-header[class*=header-] {
-            background: #ffffff;
+            background: #e7f5ff;
         }
     
