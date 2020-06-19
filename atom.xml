@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://bk.aibquan.com</id>
     <title>看侠</title>
-    <updated>2020-06-19T06:23:07.396Z</updated>
+    <updated>2020-06-19T06:46:17.734Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="http://bk.aibquan.com"/>
     <link rel="self" href="http://bk.aibquan.com/atom.xml"/>
@@ -16,8 +16,11 @@
         <link href="http://bk.aibquan.com/post/gong-zhong-hao/">
         </link>
         <updated>2020-06-19T04:51:13.000Z</updated>
-        <content type="html"><![CDATA[<p>引言<br>
-  本篇文章将会详细讲解如何在创建好的虚拟机文件中安装操作系统，可以是Windows、Linux、Dos等各种系统，本篇文章以win10系统为例。</p>
+        <content type="html"><![CDATA[<!-- more -->
+<p>引言<br>
+  本篇文章将会</p>
+<!-- more -->
+<p>详细讲解如何在创建好的虚拟机文件中安装操作系统，可以是Windows、Linux、Dos等各种系统，本篇文章以win10系统为例。</p>
 <p>工具<br>
 win10系统文件（64位）<br>
 老毛桃U盘启动盘制作工具（http://www.laomaotao.org/）</p>

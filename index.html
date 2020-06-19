@@ -1,285 +1,261 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
+<html>
 
 <head>
-    <meta charset="UTF-8" />
-<title>看侠</title>
-<meta name="description" content="温故而知新">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta charset="utf-8" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>
+    看侠
+</title>
+<link rel="shortcut icon" href="http://bk.aibquan.com/favicon.ico?v=1592549173228">
+<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
+<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="http://bk.aibquan.com/styles/main.css">
+<!-- js -->
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+<script src="http://bk.aibquan.com/media/js/jquery.sticky-sidebar.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
 
-<link type='text/css' rel='stylesheet' href='http://bk.aibquan.com/styles/main.css' media='screen' />
-<link type="text/css" rel="stylesheet" href="https://cdn.bootcss.com/KaTeX/0.11.1/katex.min.css">
-<link type="text/css" rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<script type="text/javascript" src='http://bk.aibquan.com/media/scripts/jquery.js'></script>
-<script type="text/javascript" src="https://cdn.bootcss.com/highlight.js/9.15.10/highlight.min.js"></script>
-
-<script>
-    hljs.initHighlightingOnLoad();
-</script>
 </head>
 
 <body>
-
-    <div class="layout theme-dark">
-
-        <div class="layout-header">
-
-	<div class="layout-header-main">
-		<div class="container">
-			<div class="row justify-content-lg-center">
-				<div class="col-12 col-lg-9">
-
-					<div class="navbar">
-
-						<div class="logo">
-							<a href="http://bk.aibquan.com">
-								<img class="logo"
-									src="http://bk.aibquan.com/media/images/site_avatar.png?v=1592547786025"
-									alt="">
-							</a>
-						</div>
-
-						<div class="menu d-md-inline-block d-none">
-							<ul class="layout-navigation-list">
-								
-								<li class="layout-navigation-item"><a title="首页"
-										href="/">首页</a>
-								</li>
-								
-								<li class="layout-navigation-item"><a title="归档"
-										href="/archives">归档</a>
-								</li>
-								
-								<li class="layout-navigation-item"><a title="标签"
-										href="/tags">标签</a>
-								</li>
-								
-								<li class="layout-navigation-item"><a title="关于"
-										href="/post/about">关于</a>
-								</li>
-								
-							</ul>
-						</div>
-
-						<div class="item d-md-inline-block d-none">
-							<div class="search-icon">
-								<i class="fa fa-search" aria-hidden="true"></i>
-							</div>
-						</div>
-
-
-
-						<div class="d-md-inline-block d-none">
-							<div class="search-lightbox">
-								<div class="search-body">
-
-									<form id="gridea-search-form" data-update="1592547786025" action="/search/" class="search-form">
-										<input type="text" name="q" id="s" value="" class="search-field" placeholder="请输入搜索关键词" aria-label="请输入搜索关键词" required="">
-										<button type="submit" class="submit" aria-label="Submit">
-											<i class="fa fa-search" aria-hidden="true"></i>
-										</button>
-									</form>
-
-								</div>
-							</div>
-						</div>
-
-						<div class="nav d-md-none d-inline-block">
-							<div class="trigger">
-								<i class="fa fa-bars layout-btn-toggle" aria-hidden="true"></i>
-							</div>
-						</div>
-
-					</div>
-
-				</div>
-			</div>
-
-
-
-
-		</div>
-	</div>
-
-</div>
-        
-        <div class="layout-collapse d-md-none">
-	<div class="layout-collapse-main">
-		<ul class="layout-collapse-list">
-			
-			<li class="layout-collapse-item"><a title="首页" href="/">首页</a></li>
-			
-			<li class="layout-collapse-item"><a title="归档" href="/archives">归档</a></li>
-			
-			<li class="layout-collapse-item"><a title="标签" href="/tags">标签</a></li>
-			
-			<li class="layout-collapse-item"><a title="关于" href="/post/about">关于</a></li>
-			
-
-		</ul>
-	</div>
-</div>
-
-        <div class="layout-banner">
-  <div class="layout-banner-main">
-    <div class="container">
-      <div class="row justify-content-lg-center">
-        <div class="col-12 col-lg-9">
-          <div class="banner">
-            <div class="banner-list row">
-              <div class="item col-12 col-sm-9">
-                
-                
-                <div class="banner-card main">
-                  <a class="card-content" href="http://bk.aibquan.com/post/gong-zhong-hao/" style="background-image: url('http://bk.aibquan.com/post-images/gong-zhong-hao.jpg')">
-                    <div class="mask"></div>
-                    <div class="title">
-                      <h3 class="card-title">公众号</h3>
-                    </div>
-                  </a>
-                </div>
-                
-                
-                
-              </div>
-              <div class="col-12 col-sm-3">
-                <div class="row">
-                  
-                  
-                  
-                  
-                  <div class="item col-4 col-sm-12">
-                    <div class="banner-card">
-                      <a class="card-content" href="http://bk.aibquan.com/post/hello-gridea/"
-                        style="background-image: url('http://bk.aibquan.com/post-images/hello-gridea.png')">
-                        <div class="mask"></div>
-                        <div class="title">
-                          <h3 class="card-title">Hello Gridea</h3>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                  
-                </div>
-              </div>
+    <div class="main">
+        <div class="header">
+    <div class="nav">
+        <div class="logo">
+            <a href="http://bk.aibquan.com">
+                <img class="avatar" src="http://bk.aibquan.com/images/avatar.png?v=1592549173228" alt="">
+            </a>
+            <div class="site-title">
+                <h1>
+                    看侠
+                </h1>
             </div>
-          </div>
         </div>
-      </div>
+        <span class="menu-btn fa fa-align-justify"></span>
+        <div class="menu-container">
+            <ul>
+                
+                    
+                            <li>
+                                <a href="/" class="menu">
+                                    首页
+                                </a>
+                            </li>
+                            
+                                
+                    
+                            <li>
+                                <a href="/archives" class="menu">
+                                    归档
+                                </a>
+                            </li>
+                            
+                                
+                    
+                            <li>
+                                <a href="/tags" class="menu">
+                                    标签
+                                </a>
+                            </li>
+                            
+                                
+                    
+                            <li>
+                                <a href="/post/about" class="menu">
+                                    关于
+                                </a>
+                            </li>
+                            
+                                
+            </ul>
+        </div>
     </div>
-  </div>
 </div>
 
-        <div class="layout-content">
-  <div class="layout-content-main">
-    <div class="container">
-      <div class="row justify-content-lg-center">
-        <div class="col-12 col-lg-9">
-          <div class="card-list">
-            
-            
-            
-            
-            
-            
-            
-          </div>
-
-          
-
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<script type="text/javascript">
-  //点击加载更多
-  jQuery(document).ready(function ($) {
-    //点击下一页的链接(即那个a标签)
-    $(' .btn-paginator').click(function () {
-      $this = $(this);
-      $this.addClass('loading').text('正在加载'); //给a标签加载一个loading的class属性，用来添加加载效果
-      var href = $this.attr('href'); //获取下一页的链接地址
-      if (href != undefined) { //如果地址存在
-        $.ajax({ //发起ajax请求
-          url: href,
-          //请求的地址就是下一页的链接
-          type: 'get',
-          //请求类型是get
-          error: function (request) {
-            //如果发生错误怎么处理
-          },
-          success: function (data) { //请求成功
-            $this.removeClass('loading').text('加载更多'); //移除loading属性
-            var $res = $(data).find('.card'); //从数据中挑出文章数据，请根据实际情况更改
-            $('.card-list').append($res.fadeIn(
-              500)); //将数据加载加进posts-loop的标签中。
-            var newhref = $(data).find('.btn-paginator').attr('href'); //找出新的下一页链接
-            if (newhref != undefined) {
-              $('.btn-paginator').attr('href', newhref);
-            } else {
-              $('.btn-paginator').remove(); //如果没有下一页了，隐藏
-            }
-          }
+<script>
+    $(document).ready(function() {
+        $(".menu-btn").click(function() {
+            $(".menu-container").slideToggle();
         });
-      }
-      return false;
+        $(window).resize(function() {
+
+            if (window.matchMedia('(min-width: 960px)').matches) {
+                $(".menu-container").css('display', 'block')
+            } else {
+                $(".menu-container").css('display', 'none')
+            }
+
+        });
     });
-  });
 </script>
 
-        	<div class="layout-footer">
+            <div id="main-content" class="post-container main-container">
+                <div id="content" class="main-container-left">
+                    
+        
+            <article class="post i-card">
+                <h2 class="post-title">
+                    <a href="http://bk.aibquan.com/post/gong-zhong-hao/">
+                        公众号
+                    </a>
+                </h2>
+                <div class="post-info">
+                    <time class="post-time">2020-06-19</time>
+                    
+                </div>
+                <div class="post-article">
+                    
+                        <a href="http://bk.aibquan.com/post/gong-zhong-hao/" class="post-feature-image" style="background-image:url(http://bk.aibquan.com/post-images/gong-zhong-hao.jpg) ">
+                        </a>
+                        
+                            <div class="post-content">
+                                
+                                        <div class="post-content-content">
+                                            
+引言
+  本篇文章将会
 
-		<div class="container">
-			<div class="row justify-content-lg-center">
-				<div class="col-12 col-lg-9">
-					<div class="footer">
-						<div class="row">
-							<div class="col-12 col-md-9">
-								<div class="footer-copy">
-									
-									Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
-									<div class="footer-icp d-none d-sm-inline-block">
-										<span class="px-2">⋅</span>
-										
-									</div>
-								</div>
-							</div>
-							<div class="col-sm-3 d-none d-md-block">
-								<div class="footer-links">
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+详细讲解如何在创建好的虚拟机文件中安装操作系统，可以是Windows、Linux、Dos等各种系统，本篇文章以win10系统为例。
+工具
+win10系统文件（64位）
+老毛桃U盘启动盘制作工具（http://www.laomaotao.org/）
+制作装系统的PE环境
+  打开下载好的老毛桃工具，选择ISO模式，存储文件路径、最后点击生成ISO，制作ISO镜像文件，生成的ISO镜像文件如下图所示。
+这里写图片描述
+这里写图片描述
+虚拟机中安装win10系统
+1 在创建好的虚拟机文件中，点击CD/DVD，进入虚拟机设置页面，右侧选择使用ISO镜像文件，浏览处选择你前面用老毛桃工具创建的ISO文件路径。
+这里写图片描述
+这里写图片描述
+2 点击高级选项，选择IDE模式，保存所有设置。
+这里写图片描述
+3 然后点击菜单栏上方绿色三角形按钮，开启虚拟机，等待进入PE环境，选择win8PE标准版，进入PE界面。
+这里写图片描述
+4 进入PE界面后，首先为你的虚拟机硬盘分区，点击桌面上的DiskGenius分区工具，进入选择快速分区，自定义几个分区，这里我们定义两个，然后确定，完成后进入我的电脑查看，此时你的虚拟机硬盘分为两个区，系统和软件区。
+这里写图片描述
+这里写图片描述
+5 完成分区之后，应该是安装系统了，将你的系统文件拷贝U盘插入主机，但此时发现你的虚拟机识别不出U盘，因为你没有安装VMware Tools工具，这个虚拟机会弹窗提示你安装，点击安装即可。
+这里写图片描述
+6 安装VMware Tools后，点击我的电脑你可以看到，此时U盘已经读取出来。
+这里写图片描述
+7 点击桌面上老毛桃装机工具，选择U盘里面存放的win10系统文件，将系统文件安装在C盘，点击确定后，等待安装过程完成。
+这里写图片描述
+这里写图片描述
+这里写图片描述
+系统安装完成后，此时虚拟机文件就是一个以软件方式独立运行的系统，你可以在虚拟系统里实现主机上的任意操作，并且不会损害主机，如果虚拟机崩溃，也不过是关闭删除一个虚拟机文件而已，完全可以再创建N个虚拟机文件，实现多台电脑多个系统。
 
-	</div>
+                                        </div>
+                                        
+                                            <a class="btn btn-text" href="http://bk.aibquan.com/post/gong-zhong-hao/">Read More ~</a>
+                            </div>
+                </div>
+            </article>
+            
+            <article class="post i-card">
+                <h2 class="post-title">
+                    <a href="http://bk.aibquan.com/post/hello-gridea/">
+                        Hello Gridea
+                    </a>
+                </h2>
+                <div class="post-info">
+                    <time class="post-time">2018-12-12</time>
+                    
+                        <a href="http://bk.aibquan.com/tag/1FNWIRR3z/" class="post-tag i-tag
+                            i-tag-error">
+            #Gridea
+        </a>
+                        
+                </div>
+                <div class="post-article">
+                    
+                        <a href="http://bk.aibquan.com/post/hello-gridea/" class="post-feature-image" style="background-image:url(http://bk.aibquan.com/post-images/hello-gridea.png) ">
+                        </a>
+                        
+                            <div class="post-content">
+                                
+                                    <div class="post-content-abstract">
+                                        <p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
+✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
 
-	<script type="text/javascript" src='http://bk.aibquan.com/media/scripts/main.js'></script>
-	
+                                    </div>
+                                    
+                                            <a class="btn btn-text" href="http://bk.aibquan.com/post/hello-gridea/">Read More ~</a>
+                            </div>
+                </div>
+            </article>
+            
+                <!-- 翻页 -->
+                
+                </div>
+                <!--  -->
+                <div class="main-container-middle"></div>
+                <!--  -->
+                <div id="sidebar" class="main-container-right">
+
+                    <!-- 个人信息 -->
+                    
+    <div class="id_card i-card">
+        <div class="id_card-avatar" style="background-image: url(http://bk.aibquan.com/images/avatar.png?v=1592549173228)">
+        </div>
+        <h1 class="id_card-title">
+            看侠
+        </h1>
+        <h2 class="id_card-description">
+            温故而知新
+        </h2>
+        <!--  -->
+        <div class="id_card-sns">
+            <!-- github -->
+            
+                <a href="https://www.kanxcx.cn" target="_blank" rel="noopener noreferrer"><i
+                class="fa fa-github"></i></a>
+                
+                    <!-- twitter -->
+                    
+                            <!-- weibo -->
+                            
+                                    <!-- facebook -->
+                                    
+
+        </div>
     </div>
+    
+
+                        <!-- 公告栏 -->
+                        
+    <div class="notice-card i-card ">
+        <div class="notice-title i-card-title">公告</div>
+        <div class="notice-content">
+            无代码搭建自己的网站
+        </div>
+    </div>
+    
+
+                </div>
+            </div>
+
+
+
+            <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | 
+  <a class="rss" href="http://bk.aibquan.com/atom.xml" target="_blank">RSS</a>
+</div>
+
+<script>
+  hljs.initHighlightingOnLoad()
+</script>
+
+    </div>
+    <script>
+        $('#sidebar').stickySidebar({
+            topSpacing: 80,
+            // bottomSpacing: 60
+        });
+    </script>
 </body>
 
 </html>
