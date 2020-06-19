@@ -1,181 +1,327 @@
-<!DOCTYPE html>
+<!-- 头部 -->
 <html>
-  <head>
-    <meta charset="utf-8" >
 
-<title>公众号 | 看侠</title>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>看侠</title>
+<meta name="description" content="温故而知新" />
 
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="shortcut icon" href="http://bk.aibquan.com/favicon.ico">
+<meta name='robots' content='noindex,nofollow'>
 
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="http://bk.aibquan.com/favicon.ico?v=1592550325244">
-<link rel="stylesheet" href="http://bk.aibquan.com/styles/main.css">
+<SCRIPT language=javascript>
+            window.onerror=function() { return true; }
+</SCRIPT>
 
+<script type='text/javascript' src='http://bk.aibquan.com/media/js/jquery-1.12.4-wp.js'></script>
+<script type='text/javascript' src='http://bk.aibquan.com/media/js/jquery-migrate.min-1.4.1.js'></script><!-- 应用迁移辅助插件 -->
 
-
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-
-
-
-    <meta name="description" content="
-引言
-  本篇文章将会
-
-详细讲解如何在创建好的虚拟机文件中安装操作系统，可以是Windows、Linux、Dos等各种系统，本篇文章以win10系统为例。
-工具
-win10系统文件（64位）
-老毛桃U盘启动盘制作工具（http://ww..." />
-    <meta name="keywords" content="" />
-  </head>
-  <body>
-    <div id="app" class="main">
-
-      <div class="sidebar" :class="{ 'full-height': menuVisible }">
-  <div class="top-container" data-aos="fade-right">
-    <div class="top-header-container">
-      <a class="site-title-container" href="http://bk.aibquan.com">
-        <img src="http://bk.aibquan.com/images/avatar.png?v=1592550325244" class="site-logo">
-        <h1 class="site-title">看侠</h1>
-      </a>
-      <div class="menu-btn" @click="menuVisible = !menuVisible">
-        <div class="line"></div>
-      </div>
-    </div>
-    <div>
-      
-        
-          <a href="/" class="site-nav">
-            首页
-          </a>
-        
-      
-        
-          <a href="/archives" class="site-nav">
-            归档
-          </a>
-        
-      
-        
-          <a href="/tags" class="site-nav">
-            标签
-          </a>
-        
-      
-        
-          <a href="/post/about" class="site-nav">
-            关于
-          </a>
-        
-      
-    </div>
-  </div>
-  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
-    <div class="social-container">
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    </div>
-    <div class="site-description">
-      温故而知新
-    </div>
-    <div class="site-footer">
-      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="http://bk.aibquan.com/atom.xml" target="_blank">RSS</a>
-    </div>
-  </div>
-</div>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+<link rel="stylesheet" href="http://bk.aibquan.com/media/css/style.css">
+<link rel="stylesheet" href="http://bk.aibquan.com/media/css/main.css">
+<link rel="stylesheet" href="http://bk.aibquan.com/media/css/monokai_sublime.min.css">
+<!-- main.less -->
+<link rel="stylesheet"  href="http://bk.aibquan.com/styles/main.css">
+<!-- 目录索引 start-->
+<link href="http://bk.aibquan.com/media/plugins/tocify/toc.css" rel="stylesheet">
 
 
-      <div class="main-container">
-        <div class="content-container" data-aos="fade-up">
-          <div class="post-detail">
-            <h2 class="post-title">公众号</h2>
-            <div class="post-date">2020-06-19</div>
-            
-              <div class="feature-container" style="background-image: url('http://bk.aibquan.com/post-images/gong-zhong-hao.jpg')">
-              </div>
-            
-            <div class="post-content" v-pre>
-              <!-- more -->
-<p>引言<br>
-  本篇文章将会</p>
-<!-- more -->
-<p>详细讲解如何在创建好的虚拟机文件中安装操作系统，可以是Windows、Linux、Dos等各种系统，本篇文章以win10系统为例。</p>
-<p>工具<br>
-win10系统文件（64位）<br>
-老毛桃U盘启动盘制作工具（http://www.laomaotao.org/）</p>
-<p>制作装系统的PE环境<br>
-  打开下载好的老毛桃工具，选择ISO模式，存储文件路径、最后点击生成ISO，制作ISO镜像文件，生成的ISO镜像文件如下图所示。<br>
-这里写图片描述<br>
-这里写图片描述</p>
-<p>虚拟机中安装win10系统<br>
-1 在创建好的虚拟机文件中，点击CD/DVD，进入虚拟机设置页面，右侧选择使用ISO镜像文件，浏览处选择你前面用老毛桃工具创建的ISO文件路径。<br>
-这里写图片描述<br>
-这里写图片描述<br>
-2 点击高级选项，选择IDE模式，保存所有设置。<br>
-这里写图片描述<br>
-3 然后点击菜单栏上方绿色三角形按钮，开启虚拟机，等待进入PE环境，选择win8PE标准版，进入PE界面。<br>
-这里写图片描述<br>
-4 进入PE界面后，首先为你的虚拟机硬盘分区，点击桌面上的DiskGenius分区工具，进入选择快速分区，自定义几个分区，这里我们定义两个，然后确定，完成后进入我的电脑查看，此时你的虚拟机硬盘分为两个区，系统和软件区。<br>
-这里写图片描述<br>
-这里写图片描述<br>
-5 完成分区之后，应该是安装系统了，将你的系统文件拷贝U盘插入主机，但此时发现你的虚拟机识别不出U盘，因为你没有安装VMware Tools工具，这个虚拟机会弹窗提示你安装，点击安装即可。<br>
-这里写图片描述<br>
-6 安装VMware Tools后，点击我的电脑你可以看到，此时U盘已经读取出来。<br>
-这里写图片描述<br>
-7 点击桌面上老毛桃装机工具，选择U盘里面存放的win10系统文件，将系统文件安装在C盘，点击确定后，等待安装过程完成。<br>
-这里写图片描述<br>
-这里写图片描述<br>
-这里写图片描述</p>
-<p>系统安装完成后，此时虚拟机文件就是一个以软件方式独立运行的系统，你可以在虚拟系统里实现主机上的任意操作，并且不会损害主机，如果虚拟机崩溃，也不过是关闭删除一个虚拟机文件而已，完全可以再创建N个虚拟机文件，实现多台电脑多个系统。</p>
 
+
+
+
+<link rel="stylesheet" href="http://bk.aibquan.com/media/css/plugins/fancybox.min.css">
+<link rel="stylesheet" class="layout-css" id="layout-css" href="  ">
+
+<link rel="stylesheet" class="layout-blur-css" id="layout-blur-css" href=" ">
+ 
+
+<link rel="stylesheet" class="rtl-css" id="rtl-css" href="">
+
+<style>
+body[class*=background-img-]{background-size:cover;background-repeat:no-repeat;background-position:top right;background-attachment:fixed}body[class*=background-img-] .pcoded-navbar.theme-horizontal~.pcoded-header[class*=header-]{background-size:cover;background-repeat:no-repeat;background-position:top right;background-attachment:fixed}body.background-blue-img-1{background-image:url('');background-attachment:fixed;background-repeat:no-repeat;background-size:100% 100%;-moz-background-size:100% 100%}body.background-blue-img-1 .pcoded-navbar.theme-horizontal~.pcoded-header[class*=header-]{background-image:url('');background-attachment:fixed;background-repeat:no-repeat;background-size:100% 100%;-moz-background-size:100% 100%}
+</style>
+</head>
+	
+<body class=" background-blue ">
+
+<div id="body" class=" container box-layout ">
+
+      <!-- [ 预装机 ] start -->
+      <div class="loader-bg" style="display: none">
+            <div class="loader-track">
+                  <div class="loader-fill"></div>
             </div>
-            
-            
-              <div class="next-post">
-                <div class="next">下一篇</div>
-                <a href="http://bk.aibquan.com/post/hello-gridea/">
-                  <h3 class="post-title">
-                    Hello Gridea
-                  </h3>
-                </a>
-              </div>
-            
+      </div>
+      <!-- [ 预装机 ] End -->
+<!--头部 over-->
 
-            
+        <!-- 侧导航 -->
+        
+<nav class="
+pcoded-navbar menu-light
+ ">
+  <div class="navbar-wrapper  ">
+    <div class="navbar-content scroll-div ">
 
-          </div>
+      <ul class="nav pcoded-inner-navbar ">
+        <li class="nav-item pcoded-menu-caption">
+          <label>导航</label>
+        </li>
+      </ul>
+      <!-- 导航 -->
+      <ul class="nav pcoded-inner-navbar">
+                  
+                  
+                  <li>
+                    
+                    <a href="/" target="_self">
+                      <span class="pcoded-micon"><i class="feather icon-home"></i></span>首页
+                    </a>
+                  </li>
+                  
+                  
+                  <li>
+                    
+                    <a href="/archives/" target="_self">
+                      <span class="pcoded-micon"><i class="feather icon-list"></i></span>归档
+                    </a>
+                  </li>
+                  
+                  
+                  <li>
+                    
+                    <a href="/tags/" target="_self">
+                      <span class="pcoded-micon"><i class="feather icon-tag"></i></span>标签
+                    </a>
+                  </li>
+                  
+                  
+                  <li>
+                    
+                    <a href="/post/about/" target="_self">
+                      <span class="pcoded-micon"><i class="feather icon-user"></i></span>关于
+                    </a>
+                  </li>
+                  
+      </ul>
+      <ul class="nav pcoded-inner-navbar ">
+        <li class="nav-item pcoded-menu-caption">
+          <label>组成</label>
+        </li>
+      </ul>
+      <!-- 把标签做成分类 -->
+      <ul class="nav pcoded-inner-navbar ">
+        <li>
+          <a href="javascript:void(0)" no-pjax="" class="nav-link pcoded-submenu-click">
+            <span class="pcoded-micon"><i class="feather icon-align-justify"></i></span><span
+              class="pcoded-mtext">分类</span></a>
+          <ul class="pcoded-submenu" data="off" style="display: none;">
+                            <!-- 分类列表 -->
+                          
+                          
+                          
+                          
+                          
+                          
+                          
+                          
+                          
+                          
+                          
+                          <li>
+                            <a href="http://bk.aibquan.com/tag/1FNWIRR3z/" rel="1">
+                              <span class="pcoded-micon"><i class="feather icon-activity"></i></span><span>Gridea</span></a>
+                          </li>
+                          
+                            <!-- 分类列表 / -->
+          </ul>
+        </li>
+      </ul>
+      <!-- 把标签做成分类 结束-->
+    </div>
+  </div>
+</nav>
+        <!--侧导航 over-->
+
+        <!-- 顶导航 -->
+        <!-- [ 顶部/标头 ]  start -->
+<header class="navbar pcoded-header navbar-expand-lg navbar-light header-blue ">
+    <div class="m-header">
+        <a class="mobile-menu" id="mobile-collapse" href="#!"><span></span></a>
+        <a href="http://bk.aibquan.com" class="b-brand">
+            <!-- ========   change your logo hear   ============ -->
+                        <img src="http://bk.aibquan.com/media/images/logo.png" alt="" class="logo" width="68" height="auto">
+                    </a>
+        <a href="#!" class="mob-toggler">
+            <i class="feather icon-more-vertical"></i>
+        </a>
+    </div>
+    <div class="collapse navbar-collapse">
+        <!-- <ul id="menu-gu%e8%87%aa%e7%94%a8-1" class="navbar-nav top-navbar-nav"><li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-132"><a href="" aria-current="page">首页</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a href="sample-page/index.html">示例页面</a></li>
+</ul> -->
+
+
+
+
+        <ul class="navbar-nav ml-auto" style="
+    height: 0px;
+">
+
+
+            <li class="nav-item m-r-10"><a href="javascript:void(0)" class="nav-switch-dark-mode text-lg" title="关灯">
+                <i class="feather icon-moon"></i></a>
+            </li>
+            <li class="nav-item">
+                <a href="#!" class="pop-search text-lg"><i class="feather icon-search"></i></a>
+                <form class="search-bar" id="searchform" method="get" role="search" action="http://127.0.0.1">
+                    <input type="text" name="s" class="form-control border-0 shadow-none" placeholder="请输入关键词搜索">
+                    <button type="button" class="close" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </form>
+            </li>
+        </ul>
+
+      
+    </div>
+
+
+</header>
+<!-- [ 顶部/标头 ] end -->
+        <!--顶导航 over-->
+
+        <!-- 内容 -->
+<section class="pcoded-main-container" id="content">
+    <div class="pcoded-content">
+        <div class="row">
+            <!-- 调用分类 -->
+            
 
         </div>
-      </div>
     </div>
+    <!-- [ 版权 ] start -->
+    <!-- 版权 -->
+<footer class="footer card py-3 py-lg-3">
+<div class="container">
+	<div class="footer-copyright text-xs px-3">
+		<div class="float-left">
+			Copyright © 2020 
+			Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+		</div>
+		<div class="float-right d-none">
+			  Designed by <a href="//803344.xyz/" title="Art" target="_blank">Art</a>
+			移植 <a href="//www.hankin.cn/" title="" rel="home">hankin主题</a>
+			</div>
+	</div>
+</div>
+</footer>
+    <!-- [ 版权 ] end -->
+</section>
+        <!--内容 over-->
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script type="application/javascript">
-
-AOS.init();
-
-var app = new Vue({
-  el: '#app',
-  data: {
-    menuVisible: false,
-  },
-})
-
+    <!-- 尾部 -->
+    </div>
+<!--定义全局变量--> 
+<script type="text/javascript">
+window.THEME_URL = 'http://bk.aibquan.com'; //获取域名地址 
+window.ENCODE_URI_COMPONENT_TITLE = document.title; 
+window.ENCODE_URI_COMPONENT_LINK = this.location.href; 
+window.ENCODE_URI_COMPONENT_IMAGE = 'http://bk.aibquan.com/media/images/thumb.png';//分享出去的海波
+window.IS_PAGE_SINGLE = 0;
+window.IS_SLIDER = 1;
 </script>
 
 
 
 
+<script type="text/javascript" src="http://bk.aibquan.com/media/js/plugins/jquery.js"></script>
+<script type="text/javascript" src="http://bk.aibquan.com/media/js/plugins/jquery.cookie.js"></script>
+<script type="text/javascript" src="http://bk.aibquan.com/media/js/plugins/popper.min.js"></script>
+<script type="text/javascript" src="http://bk.aibquan.com/media/js/plugins/bootstrap.min.js"></script>
+<script type="text/javascript" src="http://bk.aibquan.com/media/js/plugins/highlight/highlight.min.js"></script>
+<script type="text/javascript" src="http://bk.aibquan.com/media/js/plugins/pjax.js"></script>
 
 
-  </body>
+
+<!-- 分享插件 start-->
+<div id="cz-leftside-share"></div>
+<script type="text/javascript" src="http://bk.aibquan.com/media/js/plugins/jquery.share.min.js"></script>
+<!-- 分享插件 end-->
+<!-- 灯箱 -->
+  <script type="text/javascript" src="http://bk.aibquan.com/media/js/plugins/fancybox.min.js"></script>
+  
+
+
+<!-- 文章目录 -->
+<script src="http://bk.aibquan.com/media/plugins/tocify/toc.js"></script>
+<!-- 无刷新 -->
+
+<script src="http://bk.aibquan.com/media/plugins/jquery/jquery.infinitescroll.min.js"></script>
+<!-- 自定义 -->
+<script type="text/javascript" src="http://bk.aibquan.com/media/js/main.js"></script>
+
+
+
+
+
+
+
+
+<!--网站统计代码 start-->
+<!--网站统计代码 end-->
+<!-- [ modal ] start -->
+ <div class="modal fade bd-example-modal-lg" id="gratuityModal" tabindex="-1" role="dialog" aria-labelledby="gratuityModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="gratuityModalLabel">赞赏作者</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body p-0">
+        <div class="qr_pay">
+                        <img src="http://bk.aibquan.com/media/images/zfb.jpg" class="qr_pay_alipay" style="display: block;">
+                        <img src="http://bk.aibquan.com/media/images/wx.jpg" class="qr_pay_wechatpay" style="display: none;">
+                   </div>
+      </div>
+      <div class="modal-footer">
+        <p class="text-center text-muted">请通过微信、支付宝 APP 扫一扫 </p>
+        <p class="text-center text-muted">感谢您对作者的支持！</p>
+        <p class="text-center text-muted"> 
+          <a class="btn btn-primary btn-like btn-link-like2" href="javascript:void(0);" id="qr_pay_alipay_click">&nbsp;支付宝</a>
+          <a class="btn btn-success mt-3 mb-3" href="javascript:void(0);" id="qr_pay_wechatpay_click">微信支付</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+  $("#qr_pay_alipay_click").click(function(){
+        $(".qr_pay_wechatpay").hide();
+      $(".qr_pay_alipay").css({"display":"block"});
+  });
+  $("#qr_pay_wechatpay_click").click(function(){
+      $(".qr_pay_wechatpay").css({"display":"block"});
+      $(".qr_pay_alipay").hide();
+  });
+
+    // 重载函数
+    function hljsLoino() {
+
+
+  }
+  hljsLoino();
+</script>
+
+
+<!-- [ modal ] end -->
+</body>
+
 </html>
+    <!--尾部 over-->
