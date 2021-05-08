@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>http://bk.aibquan.com</id>
+    <id>https://github.com/yeqing2/hei.git</id>
     <title>看侠</title>
-    <updated>2021-05-08T08:23:50.324Z</updated>
+    <updated>2021-05-08T09:55:38.909Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="http://bk.aibquan.com"/>
-    <link rel="self" href="http://bk.aibquan.com/atom.xml"/>
+    <link rel="alternate" href="https://github.com/yeqing2/hei.git"/>
+    <link rel="self" href="https://github.com/yeqing2/hei.git/atom.xml"/>
     <subtitle>一个小小的天地</subtitle>
-    <logo>http://bk.aibquan.com/images/avatar.png</logo>
-    <icon>http://bk.aibquan.com/favicon.ico</icon>
+    <logo>https://github.com/yeqing2/hei.git/images/avatar.png</logo>
+    <icon>https://github.com/yeqing2/hei.git/favicon.ico</icon>
     <rights>All rights reserved 2021, 看侠</rights>
     <entry>
         <title type="html"><![CDATA[公众号]]></title>
-        <id>http://bk.aibquan.com/post/gong-zhong-hao/</id>
-        <link href="http://bk.aibquan.com/post/gong-zhong-hao/">
+        <id>https://github.com/yeqing2/hei.git/post/gong-zhong-hao/</id>
+        <link href="https://github.com/yeqing2/hei.git/post/gong-zhong-hao/">
         </link>
         <updated>2020-06-19T04:51:13.000Z</updated>
         <content type="html"><![CDATA[<!-- more -->
